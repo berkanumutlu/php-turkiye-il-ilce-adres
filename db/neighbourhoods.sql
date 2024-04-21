@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: mysql
--- Üretim Zamanı: 15 Nis 2024, 20:05:54
+-- Üretim Zamanı: 21 Nis 2024, 07:15:07
 -- Sunucu sürümü: 5.7.43
 -- PHP Sürümü: 8.2.12
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `neighborhoods`
+-- Tablo için tablo yapısı `neighbourhoods`
 --
 
-CREATE TABLE `neighborhoods` (
+CREATE TABLE `neighbourhoods` (
   `id` int(11) NOT NULL,
   `city_id` int(11) NOT NULL,
   `town_id` int(11) NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `neighborhoods` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Tablo döküm verisi `neighborhoods`
+-- Tablo döküm verisi `neighbourhoods`
 --
 
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (1, 1, 12, 1317, 'Ulucamii mah', 1010),
 (2, 1, 12, 1317, 'Karasoku mah', 1010),
 (3, 1, 12, 1317, 'Kayalıbağ mah', 1010),
@@ -1234,7 +1234,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (1191, 2, 16, 258, 'Kızılhisar köyü', 2302),
 (1192, 2, 16, 258, 'Eğerli köyü', 2302),
 (1193, 2, 16, 258, 'Çamlıca köyü', 2302);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (1194, 2, 16, 258, 'Ahuri mah (sarıkaya köyü)', 2302),
 (1195, 2, 16, 258, 'Kocapirli mah (eğerli köyü)', 2302),
 (1196, 2, 16, 258, 'Topkapı köyü', 2302),
@@ -2268,7 +2268,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (2224, 3, 35, 642, 'Şahinler mah', 3370),
 (2225, 3, 35, 643, 'Dereköy mah (eynehankuzviran köyü)', 3372),
 (2226, 3, 35, 643, 'Şehitler mah (bozhüyük köyü)', 3372);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (2227, 3, 35, 643, 'Sarıcaova köyü', 3372),
 (2228, 3, 35, 643, 'Eskieymir mah (eskieymir köyü)', 3372),
 (2229, 3, 35, 643, 'Yukarıtandır köyü', 3372),
@@ -3347,7 +3347,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (3302, 4, 44, 826, 'Ziyaret mah (sağlıksuyu köyü)', 4402),
 (3303, 4, 44, 826, 'Künütepe mah (tanıktepe köyü)', 4402),
 (3304, 4, 44, 826, 'Yukarı melikşah mah (melikşah köyü)', 4402);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (3305, 4, 44, 826, 'Tanıktepe köyü', 4402),
 (3306, 4, 44, 826, 'Karabulak köyü', 4402),
 (3307, 4, 44, 826, 'Sütcü mah (yaygınyurt köyü)', 4402),
@@ -4438,7 +4438,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (4392, 5, 56, 428, 'Kutlu köyü', 5502),
 (4393, 5, 56, 428, 'Merkez mah (armutlu köyü)', 5502),
 (4394, 5, 56, 428, 'Oğulbağı köyü', 5502);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (4395, 5, 56, 428, 'Karaağaç köyü', 5502),
 (4396, 5, 56, 428, 'Seyfe köyü', 5502),
 (4397, 5, 56, 428, 'Kurnaz köyü', 5502),
@@ -5628,7 +5628,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (5581, 6, 71, 777, 'Dereköy mah', 6860),
 (5582, 6, 71, 777, 'Esen mah', 6860),
 (5583, 6, 71, 777, 'Tepeköy mah', 6860);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (5584, 6, 71, 777, 'Büyükyağcı mah', 6860),
 (5585, 6, 71, 777, 'Yeni mah', 6860),
 (5586, 6, 71, 777, 'Altıpınar mah', 6860),
@@ -6889,7 +6889,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (6841, 7, 88, 73, 'Afşar mah', 7700),
 (6842, 7, 88, 73, 'Kışla mah', 7700),
 (6843, 7, 88, 73, 'Geçit mah', 7700);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (6844, 7, 88, 73, 'Yuva mah', 7700),
 (6845, 7, 88, 73, 'Tahtamescit mah', 7700),
 (6846, 7, 88, 73, 'Karaköy mah', 7700),
@@ -7880,7 +7880,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (7831, 8, 105, 173, 'Subaşı köyü', 8690),
 (7832, 8, 105, 173, 'Aşağı yoldere mah (yoldere köyü)', 8690),
 (7833, 8, 105, 173, 'Başoba köyü', 8690);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (7834, 8, 105, 173, 'Balık köyü', 8690),
 (7835, 8, 109, 413, 'Yeniköy mah', 8700),
 (7836, 8, 109, 413, 'Armutlu mah', 8700),
@@ -8768,7 +8768,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (8718, 8, 110, 173, 'Merkez mah (inanlı köyü)', 8890),
 (8719, 8, 110, 173, 'Düzce mah (demirkent köyü)', 8890),
 (8720, 8, 110, 173, 'Soğuksu mah (demirkent köyü)', 8890);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (8721, 8, 110, 173, 'Orta mah (köprügören köyü)', 8890),
 (8722, 8, 110, 173, 'Akarşen mah (zeytincik köyü)', 8890),
 (8723, 8, 110, 173, 'Ahalt mah (havuzlu köyü)', 8890),
@@ -9880,7 +9880,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (9829, 10, 131, 1324, 'Dedeoba mah', 10202),
 (9830, 10, 131, 1324, 'Yeniyenice mah', 10202),
 (9831, 10, 131, 1324, 'Çakılköy mah', 10202);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (9832, 10, 131, 1322, 'Ergili mah', 10245),
 (9833, 10, 131, 1322, 'Kuşcenneti mah', 10245),
 (9834, 10, 131, 1322, 'Yeşilçomlu mah', 10245),
@@ -10989,7 +10989,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (10937, 11, 152, 335, 'Büyükyenice köyü', 11502),
 (10938, 11, 152, 335, 'Boyunkaya köyü', 11502),
 (10939, 11, 154, 336, 'Türkmenbaşı mah', 11600);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (10940, 11, 154, 336, 'Orta mah', 11600),
 (10941, 11, 154, 336, 'Balaban mah', 11600),
 (10942, 11, 154, 336, 'Kayhan mah', 11600),
@@ -11905,7 +11905,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (11852, 12, 161, 491, 'Elbaşı köyü', 12702),
 (11853, 12, 161, 491, 'Küllüce mah (gençtavus köyü)', 12702),
 (11854, 12, 161, 491, 'Yukarı köprübaşı mah (yenidal köyü)', 12702);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (11855, 12, 161, 491, 'Duygulu mah (yenibaşak köyü)', 12702),
 (11856, 12, 161, 491, 'Piyami mah (doğuyeli köyü)', 12702),
 (11857, 12, 161, 491, 'Yeniyerleşim mah (hazarşah köyü)', 12702),
@@ -12860,7 +12860,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (12806, 13, 169, 221, 'Gölbaşı mah (kavakbaşı köyü)', 13702),
 (12807, 13, 169, 221, 'Çatalsöğüt köyü', 13702),
 (12808, 13, 169, 221, 'Yenidoğan köyü', 13702);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (12809, 13, 169, 221, 'Ilıcak mah (alatoprak köyü)', 13702),
 (12810, 13, 169, 221, 'İnişli mah (üstyayla köyü)', 13702),
 (12811, 13, 169, 221, 'Yeşilyurt mah (alatoprak köyü)', 13702),
@@ -13729,7 +13729,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (13674, 14, 173, 323, 'Tembeller mah (kozcağız köyü)', 14782),
 (13675, 14, 173, 323, 'Kumarlar mah (bulanık köyü)', 14782),
 (13676, 14, 173, 323, 'Susuz köyü', 14782);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (13677, 14, 173, 323, 'Hacıahmetler mah (yeşilyazı köyü)', 14782),
 (13678, 14, 173, 323, 'Hapşanlar mah (hisarözü köyü)', 14782),
 (13679, 14, 173, 323, 'Hebiller mah (karaardıç köyü)', 14782),
@@ -14563,7 +14563,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (14507, 14, 172, 323, 'Merkez mah (yazıkara köyü)', 14902),
 (14508, 14, 172, 323, 'Çukurca yaylası mah (kösreli köyü)', 14902),
 (14509, 14, 172, 323, 'Merkez mah (zeyneller köyü)', 14902);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (14510, 14, 172, 323, 'Sömerciler mah (karacadağdemirciler köyü', 14902),
 (14511, 14, 172, 323, 'Yayla mah (akçabey köyü)', 14902),
 (14512, 14, 172, 323, 'Apsarı mah (yeşilvadi köyü)', 14902),
@@ -15546,7 +15546,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (15489, 16, 195, 265, 'Doğanyurdu mah', 16400),
 (15490, 16, 195, 265, 'Madenköy mah', 16400),
 (15491, 16, 195, 265, 'Yukarıballık mah', 16400);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (15492, 16, 195, 265, 'Yeniceköy mah', 16400),
 (15493, 16, 195, 265, 'Şipali mah', 16400),
 (15494, 16, 195, 265, 'Bilalköy mah', 16400),
@@ -16641,7 +16641,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (16583, 17, 215, 27, 'Büyük mithatlar mah (koruköy köyü)', 17502),
 (16584, 17, 215, 27, 'Cumalı köyü', 17502),
 (16585, 17, 215, 27, 'Salavurtepe1 mah (koruköy köyü)', 17502);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (16586, 17, 215, 27, 'Güneyli köyü', 17502),
 (16587, 17, 215, 27, 'Ilgardere mucavir mah (ılgardere köyü)', 17502),
 (16588, 17, 215, 27, 'Doğan arslan mah (demirtepe köyü)', 17502),
@@ -17629,7 +17629,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (17570, 18, 222, 104, 'Akbaş köyü', 18602),
 (17571, 18, 222, 104, 'Merkez mah (bozoğlu köyü)', 18602),
 (17572, 18, 222, 104, 'Karga köyü', 18602);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (17573, 18, 222, 104, 'Ilıca mah (kadıköy köyü)', 18602),
 (17574, 18, 222, 104, 'Kabak köyü', 18602),
 (17575, 18, 222, 104, 'Taşanlar köyü', 18602),
@@ -18594,7 +18594,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (18534, 19, 236, 14, 'Ürküler mah (karaağaç köyü)', 19402),
 (18535, 19, 236, 14, 'Karaşar mah (şeyh köyü)', 19402),
 (18536, 19, 236, 14, 'Okçular mah (seyirçayı köyü)', 19402);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (18537, 19, 236, 14, 'İnnice mah (ibik köyü)', 19402),
 (18538, 19, 236, 14, 'Ahlatcık köyü', 19402),
 (18539, 19, 236, 14, 'Kıyı mah (kurusaray köyü)', 19402),
@@ -19590,7 +19590,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (19529, 20, 257, 22, 'Kerimler mah', 20460),
 (19530, 20, 257, 22, 'Adıgüzeller mah', 20460),
 (19531, 20, 257, 22, 'Çorbacılar mah', 20460);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (19532, 20, 257, 22, 'Eziler mah', 20460),
 (19533, 20, 257, 22, 'Üç eylül mah', 20460),
 (19534, 20, 257, 22, 'Hamidiye mah', 20460),
@@ -20754,7 +20754,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (20692, 21, 270, 45, 'Kelekçi mah', 21830),
 (20693, 21, 270, 45, 'Pekmezciler mah', 21830),
 (20694, 21, 270, 45, 'Dedeköy mah', 21830);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (20695, 21, 270, 45, 'Tepe mah', 21830),
 (20696, 21, 270, 45, 'Durabeyli mah', 21830),
 (20697, 21, 270, 45, 'Kocaalan mah', 21830),
@@ -21739,7 +21739,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (21676, 23, 298, 539, 'Dere mah (çitliköy köyü)', 23402),
 (21677, 23, 298, 539, 'Günbağı mah (kaşlıca köyü)', 23402),
 (21678, 23, 298, 539, 'Sarıkavak mah (çalkaya köyü)', 23402);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (21679, 23, 298, 539, 'Özyurt mah (tekevler köyü)', 23402),
 (21680, 23, 298, 539, 'Dilekkaya mah (tekevler köyü)', 23402),
 (21681, 23, 298, 539, 'Şehbayram mah (kayalar köyü)', 23402),
@@ -22661,7 +22661,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (22597, 23, 301, 539, 'Candı mah (çatakkaya köyü)', 23902),
 (22598, 23, 301, 539, 'Yayla evleri mah (çevrimtaş köyü)', 23902),
 (22599, 23, 301, 539, 'Aylık mah (kayabağları köyü)', 23902);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (22600, 23, 301, 539, 'Kamışlık köyü', 23902),
 (22601, 23, 301, 539, 'Aşağı çolitır mah (gözeli köyü)', 23902),
 (22602, 23, 301, 539, 'Çamurluk mah (topaluşağı köyü)', 23902),
@@ -23627,7 +23627,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (23562, 24, 303, 470, 'Yalıngöze köyü', 24710),
 (23563, 24, 303, 470, 'Bürüncek köyü', 24710),
 (23564, 24, 303, 470, 'Garipçay mah (çayyaka köyü)', 24710);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (23565, 24, 303, 470, 'Merkez mah (çaylı köyü)', 24710),
 (23566, 24, 303, 470, 'Güngören köyü', 24710),
 (23567, 24, 303, 470, 'Uğur köyü', 24710),
@@ -24717,7 +24717,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (24651, 25, 315, 226, 'Çiftlik mah', 25800),
 (24652, 25, 315, 226, 'İncesu mah', 25800),
 (24653, 25, 315, 226, 'Kızlarkale mah', 25800);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (24654, 25, 315, 226, 'Şerefiye mah', 25800),
 (24655, 25, 315, 226, 'Hasanbey mah', 25800),
 (24656, 25, 315, 226, 'Kadıcelal mah', 25800),
@@ -25849,7 +25849,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (25782, 27, 352, 8, 'Güngürge mah', 27630),
 (25783, 27, 352, 8, 'Sefaşehir mah', 27630),
 (25784, 27, 352, 8, 'Aşağı arıl mah', 27630);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (25785, 27, 352, 8, 'Bayatlı mah', 27630),
 (25786, 27, 352, 8, 'Koçlu mah', 27630),
 (25787, 27, 352, 8, 'Türkyurdu mah', 27630),
@@ -26848,7 +26848,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (26780, 28, 355, 155, 'Canali mah (erdoğan köyü)', 28302),
 (26781, 28, 355, 155, 'Şenkaya mah (eriklik köyü)', 28302),
 (26782, 28, 355, 155, 'Ofran mah (burunucu köyü)', 28302);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (26783, 28, 355, 155, 'Karaşlı mah (hisarkaya köyü)', 28302),
 (26784, 28, 355, 155, 'Kıran mah (tepecik köyü)', 28302),
 (26785, 28, 355, 155, 'Fındık çukur mah (bahçeli köyü)', 28302),
@@ -27716,7 +27716,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (27647, 28, 360, 155, 'Sülük gölü mah (tikence köyü)', 28602),
 (27648, 28, 360, 155, 'Orta mah (ibrahimşeyh köyü)', 28602),
 (27649, 28, 360, 155, 'Aktaş mah (gülburnu köyü)', 28602);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (27650, 28, 360, 155, 'Portakallı mah (gebelli köyü)', 28602),
 (27651, 28, 360, 155, 'Çamburnu mah (değirmenağzı köyü)', 28602),
 (27652, 28, 360, 155, 'Kunduz mrk mah (sakarya köyü)', 28602),
@@ -28593,7 +28593,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (28523, 28, 364, 803, 'Paşalı oğlu mah (karaishak köyü)', 28902),
 (28524, 28, 364, 803, 'Uzunkum sahil mah (güneyköy köyü)', 28902),
 (28525, 28, 364, 803, 'Kıranardi mah (çakırlı köyü)', 28902);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (28526, 28, 364, 803, 'Sokulcuk mah (hisarüstü köyü)', 28902),
 (28527, 28, 364, 803, 'Tamgeriş mah (geçit köyü)', 28902),
 (28528, 28, 364, 803, 'Gelene mah (düzköy köyü)', 28902),
@@ -29462,7 +29462,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (29391, 29, 370, 405, 'Deliler köyü', 29602),
 (29392, 29, 370, 405, 'Dölek köyü', 29602),
 (29393, 29, 370, 405, 'Merkez mah (söğütlü köyü)', 29602);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (29394, 29, 370, 405, 'Kozoğlu köyü', 29602),
 (29395, 29, 370, 405, 'Mahmatlı mah (deredolu köyü)', 29602),
 (29396, 29, 370, 405, 'Öğütlü köyü', 29602),
@@ -30344,7 +30344,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (30272, 30, 379, 1533, 'Tokağaç mah (gürkavak köyü)', 30302),
 (30273, 30, 379, 1533, 'Adaklı köyü', 30302),
 (30274, 30, 379, 1533, 'Kornak mah (armutdüzü köyü)', 30302);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (30275, 30, 379, 1533, 'Taşyazı mah (sürekli köyü)', 30302),
 (30276, 30, 379, 1533, 'Gümüşlü mah (ortaç köyü)', 30302),
 (30277, 30, 379, 1533, 'Konak mah (ortaç köyü)', 30302),
@@ -31389,7 +31389,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (31316, 32, 397, 74, 'Pınar pazarı mah', 32500),
 (31317, 32, 397, 74, 'Menderes mah', 32500),
 (31318, 32, 397, 74, 'Yeşilada mah', 32500);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (31319, 32, 397, 74, 'Ağa mah', 32500),
 (31320, 32, 397, 74, 'Poyraz mah', 32500),
 (31321, 32, 397, 74, 'Kale mah', 32500),
@@ -32493,7 +32493,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (32419, 33, 417, 120, 'Demircili mah', 33940),
 (32420, 33, 417, 120, 'Akdere mah', 33940),
 (32421, 33, 417, 120, 'Balandız mah', 33940);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (32422, 33, 417, 120, 'Hırmanlı mah', 33940),
 (32423, 33, 417, 120, 'Yeşilovacık mah', 33940),
 (32424, 33, 417, 120, 'Tosmurlu mah', 33940),
@@ -33592,7 +33592,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (33517, 35, 474, 2369, 'Limontepe mah', 35160),
 (33518, 35, 480, 2349, 'Yenişehir mah', 35170),
 (33519, 35, 480, 2349, 'Çınarlı mah', 35170);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (33520, 35, 480, 2349, 'Mersinli mah', 35170),
 (33521, 35, 480, 2349, 'Halkapınar mah', 35170),
 (33522, 35, 480, 2349, 'Hilal mah', 35170),
@@ -34713,7 +34713,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (34637, 35, 468, 1069, 'Karaköy mah', 35937),
 (34638, 35, 468, 1069, 'Germiyan mah', 35937),
 (34639, 35, 475, 140, 'Kösedere mah', 35960);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (34640, 35, 475, 140, 'Küçükbahçe mah', 35960),
 (34641, 35, 475, 140, 'Tepeboz mah', 35960),
 (34642, 35, 475, 140, 'Anbarseki mah', 35960),
@@ -35683,7 +35683,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (35606, 37, 512, 192, 'Tellioğlu mah (geyikli köyü)', 37210),
 (35607, 37, 512, 192, 'Kuzyaka mah (kuzyaka köyü)', 37210),
 (35608, 37, 512, 192, 'Kuskara mah (kuşkara köyü)', 37210);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (35609, 37, 512, 192, 'Hacıbey mah (hacıbey köyü)', 37210),
 (35610, 37, 512, 192, 'Akkaya mah (yaka köyü)', 37210),
 (35611, 37, 512, 192, 'Bektaş mah (kuzyaka bucağı emirler köyü)', 37210),
@@ -36549,7 +36549,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (36471, 37, 516, 192, 'Hacılar mah (yoğunoluk köyü)', 37402),
 (36472, 37, 516, 192, 'Merkez mah (kaygınca köyü)', 37402),
 (36473, 37, 516, 192, 'Tembel mah (çoroğlu köyü)', 37402);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (36474, 37, 516, 192, 'Hacıali mah (kornapa köyü)', 37402),
 (36475, 37, 516, 192, 'Esenler mah (yukarışehirören köyü)', 37402),
 (36476, 37, 516, 192, 'Ağnak mah (bey köyü)', 37402),
@@ -37410,7 +37410,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (37331, 37, 503, 635, 'Ötegeçe mah (yeniköy köyü)', 37602),
 (37332, 37, 503, 635, 'Karaman mah (kovanören köyü)', 37602),
 (37333, 37, 503, 635, 'Adıyüzü mah (çilekçe köyü)', 37602);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (37334, 37, 503, 635, 'Kışla mah (günebakan köyü)', 37602),
 (37335, 37, 503, 635, 'Yeni mah (ishakça köyü)', 37602),
 (37336, 37, 503, 635, 'Konakyanı mah (gökçeören köyü)', 37602),
@@ -38265,7 +38265,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (38185, 37, 501, 192, 'Örcün mah (kozluören köyü)', 37752),
 (38186, 37, 501, 192, 'Muğlas mah (evlek köyü)', 37752),
 (38187, 37, 501, 192, 'Örencik mah (ahatköy köyü)', 37752);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (38188, 37, 501, 192, 'Söğütözü mah (maden köyü)', 37752),
 (38189, 37, 501, 192, 'Kaba mah (sabuncular köyü)', 37752),
 (38190, 37, 501, 192, 'Kavaklı mah (maden köyü)', 37752),
@@ -39124,7 +39124,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (39043, 37, 505, 419, 'Aşağı mah (çölmekçiler köyü)', 37872),
 (39044, 37, 505, 419, 'Akçamehmet mah (demirce köyü)', 37872),
 (39045, 37, 505, 419, 'Sarıcı mah (değirmencik köyü)', 37872);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (39046, 37, 505, 419, 'Merkez mah (küten köyü)', 37872),
 (39047, 37, 505, 419, 'Çakal mah (örencik köyü)', 37872),
 (39048, 37, 505, 419, 'Alınca mah (gökören köyü)', 37872),
@@ -40069,7 +40069,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (39987, 38, 523, 206, 'Yarım mah', 38560),
 (39988, 38, 519, 206, 'Ekinciler mah', 38600),
 (39989, 38, 519, 206, 'Camiikebir mah', 38600);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (39990, 38, 519, 206, 'Karakaya mah', 38600),
 (39991, 38, 519, 206, 'Ağcalı mah', 38600),
 (39992, 38, 519, 206, 'Yeni süksün mah', 38600),
@@ -41116,7 +41116,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (41033, 40, 545, 24, 'Karaosman kümesi mah (beşikli köyü)', 40702),
 (41034, 40, 545, 24, 'Safalı köyü', 40702),
 (41035, 40, 545, 24, 'Bozlarevci mah (bozlar köyü)', 40702);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (41036, 40, 545, 24, 'Karakuyu kümesi mah (aşağıhacıahmetli kö', 40702),
 (41037, 40, 545, 24, 'Çubuktarla köyü', 40702),
 (41038, 40, 545, 24, 'Kırdök köyü', 40702),
@@ -42225,7 +42225,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (42141, 42, 569, 205, 'Balçıkhisar mah', 42500),
 (42142, 42, 569, 205, 'Hürriyet mah', 42500),
 (42143, 42, 569, 205, 'Adakale mah', 42500);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (42144, 42, 569, 205, 'Baraj mah', 42500),
 (42145, 42, 569, 205, 'Üçhüyük mah', 42500),
 (42146, 42, 569, 205, 'Kuzucu mah', 42500),
@@ -43310,7 +43310,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (43225, 43, 602, 115, 'Külcü köyü', 43502),
 (43226, 43, 602, 115, 'Örenli köyü', 43502),
 (43227, 43, 602, 115, 'Hamzabey mah (naşa köyü)', 43502);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (43228, 43, 602, 115, 'Beylikler mah (beciler köyü)', 43502),
 (43229, 43, 602, 115, 'Mevlana mah (yaykın köyü)', 43502),
 (43230, 43, 602, 115, 'Yeni mah (yeşilköy köyü)', 43502),
@@ -44393,7 +44393,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (44307, 44, 611, 12, 'Damlı mah', 44880),
 (44308, 44, 611, 12, 'Konurtay mah', 44880),
 (44309, 44, 611, 12, 'Yeşilköy mah', 44880);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (44310, 44, 611, 12, 'Mezraa mah', 44880),
 (44311, 44, 611, 12, 'Gökçe mah', 44880),
 (44312, 44, 617, 12, 'Fatih mah', 44900),
@@ -45540,7 +45540,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (45453, 45, 625, 89, 'Yeşilköy mah', 45930),
 (45454, 45, 625, 89, 'Temrek mah', 45930),
 (45455, 45, 625, 89, 'Azimli mah', 45930);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (45456, 45, 625, 89, 'Gündoğdu mah', 45930),
 (45457, 45, 625, 89, 'Namık kemal mah', 45930),
 (45458, 45, 625, 89, 'Alanyolu mah', 45930),
@@ -46670,7 +46670,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (46582, 47, 651, 2372, 'Çaldere mah', 47500),
 (46583, 47, 651, 2372, 'Tepeli mah', 47500),
 (46584, 47, 651, 2372, 'Güngören mah', 47500);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (46585, 47, 651, 2372, 'Yolbaşı mah', 47500),
 (46586, 47, 651, 2372, 'Ulucami mah', 47500),
 (46587, 47, 651, 2372, 'Bardakçı mah', 47500),
@@ -47772,7 +47772,7 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (47683, 49, 673, 509, 'Gümüşali köyü', 49250),
 (47684, 49, 673, 509, 'Güzeltepe mah (güzeltepe köyü)', 49250),
 (47685, 49, 673, 509, 'Sönmezler mah (kalecik köyü)', 49250);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (47686, 49, 673, 509, 'Dagarası mah (yaygın köyü)', 49250),
 (47687, 49, 673, 509, 'Tabanlı köyü', 49250),
 (47688, 49, 673, 509, 'Yılmazlı mah (kayalısu köyü)', 49250),
@@ -48754,9 +48754,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (48664, 51, 687, 142, 'Eski gümüş mah (gümüşler köyü)', 51300),
 (48665, 51, 687, 142, 'Yeni gümüş mah (gümüşler köyü)', 51300),
 (48666, 51, 687, 142, 'Devlet mah (aktaş köyü)', 51300),
-(48667, 51, 687, 142, 'Yenice mah (dündarlı köyü)', 51300),
-(48668, 51, 687, 142, 'Güllüce köyü', 51300);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(48667, 51, 687, 142, 'Yenice mah (dündarlı köyü)', 51300);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(48668, 51, 687, 142, 'Güllüce köyü', 51300),
 (48669, 51, 687, 142, 'Hançerli köyü', 51300),
 (48670, 51, 687, 142, 'Orta mah (değirmenli köyü)', 51300),
 (48671, 51, 687, 142, 'Çarıklı köyü', 51300),
@@ -49850,9 +49850,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (49759, 53, 710, 121, 'Yenipazar mah', 53200),
 (49760, 53, 710, 121, 'Adalar mah', 53200),
 (49761, 53, 710, 121, 'Küçükcaferpaşa mah', 53200),
-(49762, 53, 710, 121, 'Şairler mah', 53200),
-(49763, 53, 710, 121, 'Yenicami mah', 53200);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(49762, 53, 710, 121, 'Şairler mah', 53200);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(49763, 53, 710, 121, 'Yenicami mah', 53200),
 (49764, 53, 710, 121, 'Büyükcaferpaşa mah', 53200),
 (49765, 53, 710, 121, 'Çataklıhoca mah', 53200),
 (49766, 53, 710, 121, 'Sabuncular mah', 53200),
@@ -50741,9 +50741,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (50649, 53, 712, 122, 'Şentepe mah (sulak köyü)', 53740),
 (50650, 53, 712, 122, 'Taşkesik mah (çağlayan köyü)', 53740),
 (50651, 53, 712, 122, 'Gökçetaş mah (avcılar köyü)', 53740),
-(50652, 53, 712, 122, 'Dörtyol mah (ıhlamurlu köyü)', 53740),
-(50653, 53, 712, 122, 'Sırt mah (yaylacılar köyü)', 53740);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(50652, 53, 712, 122, 'Dörtyol mah (ıhlamurlu köyü)', 53740);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(50653, 53, 712, 122, 'Sırt mah (yaylacılar köyü)', 53740),
 (50654, 53, 712, 122, 'Üst mah (doğanay köyü)', 53740),
 (50655, 53, 712, 122, 'Başköy mah (gürsu köyü)', 53740),
 (50656, 53, 712, 122, 'Yukarıderbent mah (derbent köyü)', 53740),
@@ -51762,9 +51762,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (51669, 54, 735, 94, 'Yusufbey mah', 54750),
 (51670, 54, 735, 94, 'Esenyurt mah', 54750),
 (51671, 54, 735, 94, 'Hacıyakup mah', 54750),
-(51672, 54, 735, 94, 'Kemaller mah', 54750),
-(51673, 54, 735, 94, 'İçdedeler mah', 54750);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(51672, 54, 735, 94, 'Kemaller mah', 54750);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(51673, 54, 735, 94, 'İçdedeler mah', 54750),
 (51674, 54, 735, 94, 'Yenidoğan mah', 54750),
 (51675, 54, 735, 94, 'Harkköy mah', 54750),
 (51676, 54, 735, 94, 'Hacıaliler mah', 54750),
@@ -52897,9 +52897,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (52803, 55, 746, 157, 'Değirmencili mah', 55850),
 (52804, 55, 746, 157, 'Çiğdem mah', 55850),
 (52805, 55, 746, 157, 'Mert mah', 55850),
-(52806, 55, 746, 157, 'Bekdemir mah', 55850),
-(52807, 55, 746, 157, 'Tepecik mah', 55850);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(52806, 55, 746, 157, 'Bekdemir mah', 55850);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(52807, 55, 746, 157, 'Tepecik mah', 55850),
 (52808, 55, 746, 157, 'Seyitali mah', 55850),
 (52809, 55, 746, 157, 'Güneyce mah', 55850),
 (52810, 55, 738, 157, 'Yaylaköy mah', 55860),
@@ -53870,9 +53870,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (53775, 57, 766, 397, 'Musa mah (eymir köyü)', 57002),
 (53776, 57, 766, 397, 'Kovukbaş mah (dibekli köyü)', 57002),
 (53777, 57, 766, 397, 'Çavdaroğlu mah (sinecan köyü)', 57002),
-(53778, 57, 766, 397, 'Merkez mah (hacıoğlu köyü)', 57002),
-(53779, 57, 766, 397, 'Kahyaoğlu mah (yalı köyü)', 57002);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(53778, 57, 766, 397, 'Merkez mah (hacıoğlu köyü)', 57002);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(53779, 57, 766, 397, 'Kahyaoğlu mah (yalı köyü)', 57002),
 (53780, 57, 766, 397, 'Düz eymür mah (eymir köyü)', 57002),
 (53781, 57, 766, 398, 'İncedayı mah', 57010),
 (53782, 57, 766, 398, 'Kefevi mah', 57010),
@@ -54736,9 +54736,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (54640, 57, 765, 397, 'Hançer mah (sarnıç köyü)', 57602),
 (54641, 57, 765, 397, 'Yayla mah (sarımsak köyü)', 57602),
 (54642, 57, 765, 397, 'Tilkilik altı mah (acısu köyü)', 57602),
-(54643, 57, 765, 397, 'Tongelsokağı mah (hacıselli köyü)', 57602),
-(54644, 57, 765, 397, 'Hacı mah (sarnıç köyü)', 57602);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(54643, 57, 765, 397, 'Tongelsokağı mah (hacıselli köyü)', 57602);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(54644, 57, 765, 397, 'Hacı mah (sarnıç köyü)', 57602),
 (54645, 57, 765, 397, 'Seymenli mah (şeyhli köyü)', 57602),
 (54646, 57, 765, 397, 'Merkez mah (hacıselli köyü)', 57602),
 (54647, 57, 765, 397, 'Tekke mah (yakadibi köyü)', 57602),
@@ -55593,9 +55593,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (55496, 57, 768, 397, 'Reyfez mah (yeşiloba köyü)', 57902),
 (55497, 57, 768, 397, 'Aydınoğlu mah (sarmaşık köyü)', 57902),
 (55498, 57, 768, 397, 'Arpatarlası mah (çatakgeriş köyü)', 57902),
-(55499, 57, 768, 397, 'Yalı mah (gündoğdu köyü)', 57902),
-(55500, 57, 768, 397, 'Gölgeci mah (gökçealan köyü)', 57902);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(55499, 57, 768, 397, 'Yalı mah (gündoğdu köyü)', 57902);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(55500, 57, 768, 397, 'Gölgeci mah (gökçealan köyü)', 57902),
 (55501, 57, 768, 397, 'Cizmeci mah (gökçealan köyü)', 57902),
 (55502, 57, 768, 397, 'Merkez mah (gencek köyü)', 57902),
 (55503, 57, 768, 397, 'Mantarlık mah (kuz köyü)', 57902),
@@ -56620,10 +56620,10 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (56522, 58, 781, 11, 'Çamlıca mah (karalar köyü)', 58602),
 (56523, 58, 781, 11, 'Kuzdere köyü', 58602),
 (56524, 58, 781, 11, 'Arpayazı köyü', 58602),
-(56525, 58, 781, 11, 'Kızıltaş köyü', 58602),
+(56525, 58, 781, 11, 'Kızıltaş köyü', 58602);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (56526, 58, 781, 11, 'Merkez mah (çataloluk köyü)', 58602),
-(56527, 58, 781, 11, 'Yelkesen köyü', 58602);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(56527, 58, 781, 11, 'Yelkesen köyü', 58602),
 (56528, 58, 781, 11, 'Aksu köyü', 58602),
 (56529, 58, 781, 11, 'Yaygınsöğüt köyü', 58602),
 (56530, 58, 781, 11, 'Yeşilyayla köyü', 58602),
@@ -57567,10 +57567,10 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (57468, 58, 775, 463, 'Camiliyurt köyü', 58802),
 (57469, 58, 775, 463, 'Kışla mevki mah (bahçeiçi köyü)', 58802),
 (57470, 58, 775, 463, 'Başpınar mezrası mah (karahisar köyü)', 58802),
-(57471, 58, 775, 463, 'Yelken köyü', 58802),
+(57471, 58, 775, 463, 'Yelken köyü', 58802);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (57472, 58, 775, 11, 'Aşağı çatkara mezrası mah (karadoruk köy', 58802),
-(57473, 58, 775, 463, 'Mahkenli köyü', 58802);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(57473, 58, 775, 463, 'Mahkenli köyü', 58802),
 (57474, 58, 775, 463, 'Kışla mezrası mah (osmandede köyü)', 58802),
 (57475, 58, 775, 463, 'Kuşkayası mezrası mah (çamlıca köyü)', 58802),
 (57476, 58, 775, 463, 'Güneş köyü', 58802),
@@ -58605,10 +58605,10 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (58505, 60, 806, 395, 'Aşağı mah (tatlıcak köyü)', 60302),
 (58506, 60, 806, 395, 'Meydan mah (yazıtepe köyü)', 60302),
 (58507, 60, 806, 395, 'Çay mah (kat köyü)', 60302),
-(58508, 60, 806, 395, 'Karşı mah (gökdere köyü)', 60302),
+(58508, 60, 806, 395, 'Karşı mah (gökdere köyü)', 60302);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (58509, 60, 806, 395, 'Arzupınar köyü', 60302),
-(58510, 60, 806, 395, 'Derbentçi köyü', 60302);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(58510, 60, 806, 395, 'Derbentçi köyü', 60302),
 (58511, 60, 806, 395, 'Eskıkoy mah (yeniceler köyü)', 60302),
 (58512, 60, 806, 395, 'Pazlı mah (üçyol köyü)', 60302),
 (58513, 60, 806, 395, 'Sarı mah (sarıkaya köyü)', 60302),
@@ -59540,10 +59540,10 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (59439, 60, 804, 395, 'Merkez mah (karlıyayla köyü)', 60702),
 (59440, 60, 804, 395, 'Kışlaoğlu mah (yuvacık köyü)', 60702),
 (59441, 60, 804, 395, 'Küçükbük mah (köklü köyü)', 60702),
-(59442, 60, 804, 395, 'Büyükbeşdere mah (beşdere köyü)', 60702),
+(59442, 60, 804, 395, 'Büyükbeşdere mah (beşdere köyü)', 60702);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (59443, 60, 804, 395, 'Kösamar mah (akdoğmuş köyü)', 60702),
-(59444, 60, 804, 395, 'Yerlice mah (sazak köyü)', 60702);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(59444, 60, 804, 395, 'Yerlice mah (sazak köyü)', 60702),
 (59445, 60, 804, 395, 'Gurbetli köyü', 60702),
 (59446, 60, 804, 395, 'Merkez mah (muratkaya köyü)', 60702),
 (59447, 60, 804, 395, 'Gölayağı mah (çayırpınar köyü)', 60702),
@@ -60608,10 +60608,10 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (60506, 62, 830, 266, 'Rengül mz mah (eğriyamaç köyü)', 62002),
 (60507, 62, 830, 266, 'Kırım mz mah (kuyluca köyü)', 62002),
 (60508, 62, 830, 266, 'Kocalar köyü', 62002),
-(60509, 62, 830, 266, 'Anafatma mah (yoncalı  mah)mz (suvat köy', 62002),
+(60509, 62, 830, 266, 'Anafatma mah (yoncalı  mah)mz (suvat köy', 62002);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (60510, 62, 830, 266, 'Taşoluk mz mah (çukur köyü)', 62002),
-(60511, 62, 830, 266, 'Mutlu mz mah (kocalar köyü)', 62002);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(60511, 62, 830, 266, 'Mutlu mz mah (kocalar köyü)', 62002),
 (60512, 62, 830, 266, 'Kemer mz mah (tüllük köyü)', 62002),
 (60513, 62, 830, 266, 'Kocakoç köyü', 62002),
 (60514, 62, 830, 266, 'Yolkonak köyü', 62002),
@@ -61534,11 +61534,11 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (61431, 62, 831, 266, 'Ilısu mah (dallıbahçe köyü)', 62952),
 (61432, 62, 831, 266, 'Bıçkılı mah (turnayolu köyü)', 62952),
 (61433, 62, 831, 266, 'Geriş mah (aşağıdoluca köyü)', 62952),
-(61434, 62, 831, 266, 'Yaylacık mah (sarıyayla köyü)', 62952),
+(61434, 62, 831, 266, 'Yaylacık mah (sarıyayla köyü)', 62952);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (61435, 62, 831, 266, 'Baştarla mah (aşağıdoluca köyü)', 62952),
 (61436, 62, 831, 266, 'Oymataş mah (bostanlı köyü)', 62952),
-(61437, 63, 841, 1517, 'Bamyasuyu mah', 63040);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(61437, 63, 841, 1517, 'Bamyasuyu mah', 63040),
 (61438, 63, 841, 1517, 'Kamberiye mah', 63040),
 (61439, 63, 841, 1517, 'Sancaktar mah', 63040),
 (61440, 63, 841, 1517, 'İmam bakır mah', 63040),
@@ -62680,12 +62680,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (62576, 63, 846, 15, 'Ezgil mah', 63800),
 (62577, 63, 846, 15, 'Mollahamza mah', 63800),
 (62578, 63, 846, 15, 'Yanaloba mah', 63800),
-(62579, 63, 846, 15, 'Yıldız mah', 63800),
+(62579, 63, 846, 15, 'Yıldız mah', 63800);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (62580, 63, 846, 15, 'Yalınca mah', 63800),
 (62581, 63, 846, 15, 'Ekili mah', 63800),
 (62582, 63, 846, 15, 'Oymaklı mah', 63800),
-(62583, 63, 846, 15, 'Küçükova mah', 63800);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(62583, 63, 846, 15, 'Küçükova mah', 63800),
 (62584, 63, 846, 15, 'Hüyükyanı mah', 63800),
 (62585, 63, 846, 15, 'Üçpınar mah', 63800),
 (62586, 63, 846, 15, 'Çomak mah', 63800),
@@ -63681,12 +63681,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (63576, 65, 866, 853, 'Yalnızağaç mah', 65040),
 (63577, 65, 866, 853, 'Arısu mah', 65040),
 (63578, 65, 866, 853, 'Beyüzümü mah', 65040),
-(63579, 65, 866, 853, 'Yeşilsu mah', 65040),
+(63579, 65, 866, 853, 'Yeşilsu mah', 65040);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (63580, 65, 866, 853, 'Çolpan mah', 65040),
 (63581, 65, 866, 853, 'Kasımoğlu mah', 65040),
 (63582, 65, 866, 853, 'Kalecik mah', 65040),
-(63583, 65, 866, 853, 'Karaağaç mah', 65040);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(63583, 65, 866, 853, 'Karaağaç mah', 65040),
 (63584, 65, 866, 853, 'Dağönü mah', 65040),
 (63585, 65, 866, 853, 'Çakırbey mah', 65040),
 (63586, 65, 866, 853, 'Akçift mah', 65040),
@@ -64776,12 +64776,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (64670, 66, 871, 35, 'Yukarıtekke köyü', 66602),
 (64671, 66, 871, 35, 'Güzelyayla köyü', 66602),
 (64672, 66, 871, 35, 'Günyayla köyü', 66602),
-(64673, 66, 871, 35, 'Kaletepe köyü', 66602),
+(64673, 66, 871, 35, 'Kaletepe köyü', 66602);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (64674, 66, 871, 35, 'Turluhan köyü', 66602),
 (64675, 66, 871, 35, 'Fatih mah (konuklar köyü)', 66602),
 (64676, 66, 871, 35, 'Söbeçimen köyü', 66602),
-(64677, 66, 871, 35, 'Alidemirci köyü', 66602);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(64677, 66, 871, 35, 'Alidemirci köyü', 66602),
 (64678, 66, 871, 35, 'Karaazap köyü', 66602),
 (64679, 66, 871, 35, 'Çukurören köyü', 66602),
 (64680, 66, 871, 35, 'Fahralı köyü', 66602),
@@ -65718,11 +65718,11 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (65611, 67, 883, 19, 'Hacıoğlu mah (yeşilyurt köyü)', 67802),
 (65612, 67, 883, 19, 'Kocaoğlu mah (hışıroğlu köyü)', 67802),
 (65613, 67, 883, 19, 'Merkez mah (sabunlar köyü)', 67802),
-(65614, 67, 883, 19, 'Çomu mah (gürbüzler köyü)', 67802),
+(65614, 67, 883, 19, 'Çomu mah (gürbüzler köyü)', 67802);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (65615, 67, 883, 19, 'Merkez mah (kabaca köyü)', 67802),
 (65616, 67, 883, 19, 'Seyrekbasanoğlu mah (nizamlar köyü)', 67802),
-(65617, 67, 883, 19, 'Kara kahyaoğlu mah (yeşilyurt köyü)', 67802);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(65617, 67, 883, 19, 'Kara kahyaoğlu mah (yeşilyurt köyü)', 67802),
 (65618, 67, 883, 19, 'Arapoğlu mah (çolakpehlivan köyü)', 67802),
 (65619, 67, 883, 19, 'Yokarıbaş mah (halilbeyoğlu köyü)', 67802),
 (65620, 67, 883, 19, 'Güllüoğlu mah (bölücek köyü)', 67802),
@@ -66559,11 +66559,11 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (66451, 67, 882, 1600, 'Demircioğlu mah (ihsanoğlu köyü)', 67970),
 (66452, 67, 882, 1600, 'Merkez mah (serdaroğlu köyü)', 67970),
 (66453, 67, 882, 1600, 'Marangeli mah (karakoç köyü)', 67970),
-(66454, 67, 882, 1600, 'Yukarı mah (yukarıihsaniye köyü)', 67970),
+(66454, 67, 882, 1600, 'Yukarı mah (yukarıihsaniye köyü)', 67970);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (66455, 67, 882, 1600, 'Merkez mah (ihsanoğlu köyü)', 67970),
 (66456, 67, 882, 1600, 'Mantıklar mah (başaran köyü)', 67970),
-(66457, 67, 882, 1600, 'Çavuşlar mah (kahvecioğlu köyü)', 67970);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(66457, 67, 882, 1600, 'Çavuşlar mah (kahvecioğlu köyü)', 67970),
 (66458, 67, 882, 1600, 'Merkez mah (coburlar köyü)', 67970),
 (66459, 67, 882, 1600, 'Lazlar mah (karakoç köyü)', 67970),
 (66460, 67, 882, 1600, 'Kuyu mah (ihsanoğlu köyü)', 67970),
@@ -67528,12 +67528,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (67419, 70, 904, 70, 'Yassı tepe mah (üçkuyu köyü)', 70202),
 (67420, 70, 904, 70, 'Bahçelievler mah (sudurağı köyü)', 70202),
 (67421, 70, 904, 70, 'Kameni köyü', 70202),
-(67422, 70, 904, 70, 'Atatürk mah (kılbasan köyü)', 70202),
+(67422, 70, 904, 70, 'Atatürk mah (kılbasan köyü)', 70202);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (67423, 70, 904, 70, 'Ada köyü', 70202),
 (67424, 70, 904, 70, 'Yukarı mah (ihsaniye köyü)', 70202),
 (67425, 70, 904, 70, 'Cumhuriyet mah (süleymanhacı köyü)', 70202),
-(67426, 70, 904, 70, 'Ağılönü köyü', 70202);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(67426, 70, 904, 70, 'Ağılönü köyü', 70202),
 (67427, 70, 904, 70, 'Kaşıkçı mah (cerit köyü)', 70202),
 (67428, 70, 904, 70, 'Kovalıöz mah (değirmenbaşı köyü)', 70202),
 (67429, 70, 904, 70, 'Boyalı köyü', 70202),
@@ -68523,12 +68523,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (68413, 72, 918, 264, 'Kettı mah (koçaklı köyü)', 72402),
 (68414, 72, 918, 264, 'Sarıkuş mah (yanıkkaya köyü)', 72402),
 (68415, 72, 918, 264, 'Taşlık köyü', 72402),
-(68416, 72, 918, 264, 'Doğancık mah (taşlıdere köyü)', 72402),
+(68416, 72, 918, 264, 'Doğancık mah (taşlıdere köyü)', 72402);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (68417, 72, 918, 264, 'Yuvacık mah (taşlıdere köyü)', 72402),
 (68418, 72, 918, 264, 'Yapaklı köyü', 72402),
 (68419, 72, 918, 264, 'Yukarı şat mah (tosunpınar köyü)', 72402),
-(68420, 72, 918, 264, 'Yolkenarı mah (çayönü köyü)', 72402);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(68420, 72, 918, 264, 'Yolkenarı mah (çayönü köyü)', 72402),
 (68421, 72, 918, 264, 'Duygulu köyü', 72402),
 (68422, 72, 918, 264, 'Yapraklı mah (bekirhan köyü)', 72402),
 (68423, 72, 918, 264, 'Güveçli mah (koçaklı köyü)', 72402),
@@ -69458,12 +69458,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (69347, 74, 930, 647, 'Heyelli mah (doğaşı köyü)', 74110),
 (69348, 74, 930, 647, 'Merkez mah (saraylı köyü)', 74110),
 (69349, 74, 930, 647, 'Cumayanı mah (kaşbaşı köyü)', 74110),
-(69350, 74, 930, 647, 'Haliller mah (yıldız köyü)', 74110),
+(69350, 74, 930, 647, 'Haliller mah (yıldız köyü)', 74110);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (69351, 74, 930, 647, 'Yağcı mah (terkehatipler köyü)', 74110),
 (69352, 74, 930, 647, 'Yazıcılar mah (söğütlü köyü)', 74110),
 (69353, 74, 930, 647, 'Karakız mah (karamazak köyü)', 74110),
-(69354, 74, 930, 647, 'Muhacirler mah (topluca köyü)', 74110);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(69354, 74, 930, 647, 'Muhacirler mah (topluca köyü)', 74110),
 (69355, 74, 930, 647, 'Kavlak mah (kayadibikavlak köyü)', 74110),
 (69356, 74, 930, 647, 'Ersanlar mah (kutlubeyyazıcılar köyü)', 74110),
 (69357, 74, 930, 647, 'Organize sanayi bölgesi mah (yanaz köyü)', 74110),
@@ -70330,13 +70330,13 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (70218, 75, 932, 103, 'Aşağıcambaz köyü', 75402),
 (70219, 75, 932, 103, 'Sazlısu köyü', 75402),
 (70220, 75, 932, 103, 'Kotanlı köyü', 75402),
-(70221, 75, 932, 103, 'Öncül köyü', 75402),
+(70221, 75, 932, 103, 'Öncül köyü', 75402);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (70222, 75, 932, 103, 'Eşmepınar köyü', 75402),
 (70223, 75, 932, 103, 'Kenarbel köyü', 75402),
 (70224, 75, 932, 103, 'Güvenocak köyü', 75402),
 (70225, 75, 932, 103, 'Akkiraz köyü', 75402),
-(70226, 75, 932, 103, 'Gölebakan köyü', 75402);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(70226, 75, 932, 103, 'Gölebakan köyü', 75402),
 (70227, 75, 932, 103, 'Doğankaya köyü', 75402),
 (70228, 75, 932, 103, 'Akçıl köyü', 75402),
 (70229, 75, 932, 103, 'Meryemköy köyü', 75402),
@@ -71275,12 +71275,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (71162, 78, 948, 269, 'Murat mah (saçak köyü)', 78302),
 (71163, 78, 948, 269, 'Merkez mah (bedil köyü)', 78302),
 (71164, 78, 948, 269, 'Ahatlar mah (güngören köyü)', 78302),
-(71165, 78, 948, 269, 'Çalıkahvesi mah (osmanlar köyü)', 78302),
+(71165, 78, 948, 269, 'Çalıkahvesi mah (osmanlar köyü)', 78302);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (71166, 78, 948, 269, 'Cingöz mah (halkevli köyü)', 78302),
 (71167, 78, 948, 269, 'Çelebioğlu mah (bağlıca köyü)', 78302),
 (71168, 78, 948, 269, 'Merkez mah (çavuşlu köyü)', 78302),
-(71169, 78, 948, 269, 'Rahmanlar mah (ulugeçit köyü)', 78302);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(71169, 78, 948, 269, 'Rahmanlar mah (ulugeçit köyü)', 78302),
 (71170, 78, 948, 269, 'Karacabey mah (hacıağaç köyü)', 78302),
 (71171, 78, 948, 269, 'İmamoğlu mah (bostancılar köyü)', 78302),
 (71172, 78, 948, 269, 'İmamoğlu mah (kocacık köyü)', 78302),
@@ -72157,13 +72157,13 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (72043, 79, 955, 583, 'Mehmet rıfat kazancıoğlu mah', 79090),
 (72044, 79, 955, 583, 'Nurettin mah', 79090),
 (72045, 79, 955, 583, 'Fatih sultan mehmet mah', 79090),
-(72046, 79, 955, 583, 'Altınüzüm mah', 79090),
+(72046, 79, 955, 583, 'Altınüzüm mah', 79090);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (72047, 79, 955, 583, 'Canpolat paşa mah', 79090),
 (72048, 79, 955, 583, 'Necmettin erbakan mah', 79090),
 (72049, 79, 955, 583, 'Namık kemal mah', 79090),
 (72050, 79, 955, 583, 'Tabakhane mah', 79090),
-(72051, 79, 955, 583, 'Nacaroğlu mah', 79090);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(72051, 79, 955, 583, 'Nacaroğlu mah', 79090),
 (72052, 79, 955, 583, 'İsmet paşa mah', 79090),
 (72053, 79, 955, 583, 'Şehit sakıp mah', 79090),
 (72054, 79, 955, 583, 'Aslan mah', 79090),
@@ -73087,12 +73087,12 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 (72972, 81, 971, 1068, 'Merkez mah (istilli köyü)', 81060),
 (72973, 81, 971, 1068, 'Büyükaçma köyü', 81060),
 (72974, 81, 971, 1068, 'Çiftlik köyü', 81060),
-(72975, 81, 971, 1068, 'Merkez mah (kurtsuyu köyü)', 81060),
+(72975, 81, 971, 1068, 'Merkez mah (kurtsuyu köyü)', 81060);
+INSERT INTO `neighbourhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
 (72976, 81, 971, 1068, 'Çalıcuma köyü', 81060),
 (72977, 81, 971, 1068, 'Hatipli mah (hatipli ketenciler köyü)', 81060),
 (72978, 81, 971, 1068, 'Tantan kuyu mah (kurtsuyu köyü)', 81060),
-(72979, 81, 971, 1068, 'İslahiye köyü', 81060);
-INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, `zip_code`) VALUES
+(72979, 81, 971, 1068, 'İslahiye köyü', 81060),
 (72980, 81, 971, 1068, 'Hamamdağı mah (derdin köyü)', 81060),
 (72981, 81, 971, 1068, 'Köprübaşı köyü', 81060),
 (72982, 81, 971, 1068, 'Yunuslar mah (kemerkasım köyü)', 81060),
@@ -73703,9 +73703,9 @@ INSERT INTO `neighborhoods` (`id`, `city_id`, `town_id`, `district_id`, `name`, 
 --
 
 --
--- Tablo için indeksler `neighborhoods`
+-- Tablo için indeksler `neighbourhoods`
 --
-ALTER TABLE `neighborhoods`
+ALTER TABLE `neighbourhoods`
   ADD UNIQUE KEY `_id` (`id`);
 
 --
@@ -73713,9 +73713,9 @@ ALTER TABLE `neighborhoods`
 --
 
 --
--- Tablo için AUTO_INCREMENT değeri `neighborhoods`
+-- Tablo için AUTO_INCREMENT değeri `neighbourhoods`
 --
-ALTER TABLE `neighborhoods`
+ALTER TABLE `neighbourhoods`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73584;
 COMMIT;
 
