@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: mysql
--- Üretim Zamanı: 21 Nis 2024, 07:14:57
+-- Üretim Zamanı: 29 Nis 2024, 20:24:27
 -- Sunucu sürümü: 5.7.43
 -- PHP Sürümü: 8.2.12
 
