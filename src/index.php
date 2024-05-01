@@ -234,6 +234,9 @@ require_once 'config/db.php';
     function showSelectMenu(select_item, result_item) {
         select_item.show();
         result_item.show();
+        //result_item.find('code').attr('data-highlighted', null);
+        delete result_item.find('code')[0].dataset.highlighted;
+        hljs.highlightElement(result_item.find('code')[0]);
     }
 
     function copyToClipboard(text) {
@@ -305,6 +308,7 @@ require_once 'config/db.php';
         select_city.select2(select2_properties);
         select_city.on('select2:select', function (e) {
             e.preventDefault();
+            result_address.hide();
             resetSelectMenu(select_town, result_town);
             resetSelectMenu(select_district, result_district);
             resetSelectMenu(select_neighbourhood, result_neighbourhood);
@@ -327,12 +331,14 @@ require_once 'config/db.php';
         });
         select_town.on('select2:clear', function (e) {
             e.preventDefault();
+            result_address.hide();
             if (e.params.hasOwnProperty('city_id') && Number.isInteger(e.params.city_id)) {
                 let props = select2_properties;
                 props.placeholder = 'Turkey Towns';
                 props.ajax.data = function (params) {
                     return {
                         q: params.term,
+                        page: params.page,
                         get_town_list: 1,
                         city_id: e.params.city_id
                     };
@@ -342,6 +348,7 @@ require_once 'config/db.php';
         });
         select_town.on('select2:select', function (e) {
             e.preventDefault();
+            result_address.hide();
             resetSelectMenu(select_district, result_district);
             resetSelectMenu(select_neighbourhood, result_neighbourhood);
             if (e.params.hasOwnProperty('data')) {
@@ -364,12 +371,14 @@ require_once 'config/db.php';
         });
         select_district.on('select2:clear', function (e) {
             e.preventDefault();
+            result_address.hide();
             if ((e.params.hasOwnProperty('city_id') && Number.isInteger(e.params.city_id)) && e.params.hasOwnProperty('town_id') && Number.isInteger(e.params.town_id)) {
                 let props = select2_properties;
                 props.placeholder = 'Turkey Districts';
                 props.ajax.data = function (params) {
                     return {
                         q: params.term,
+                        page: params.page,
                         get_district_list: 1,
                         city_id: e.params.city_id,
                         town_id: e.params.town_id
@@ -380,6 +389,7 @@ require_once 'config/db.php';
         });
         select_district.on('select2:select', function (e) {
             e.preventDefault();
+            result_address.hide();
             resetSelectMenu(select_neighbourhood, result_neighbourhood);
             if (e.params.hasOwnProperty('data')) {
                 var item = e.params.data;
@@ -402,12 +412,14 @@ require_once 'config/db.php';
         });
         select_neighbourhood.on('select2:clear', function (e) {
             e.preventDefault();
+            result_address.hide();
             if ((e.params.hasOwnProperty('city_id') && Number.isInteger(e.params.city_id)) && e.params.hasOwnProperty('town_id') && Number.isInteger(e.params.town_id)) {
                 let props = select2_properties;
                 props.placeholder = 'Turkey Neighbourhoods';
                 props.ajax.data = function (params) {
                     return {
                         q: params.term,
+                        page: params.page,
                         get_neighbourhood_list: 1,
                         city_id: e.params.city_id,
                         town_id: e.params.town_id,
@@ -428,6 +440,8 @@ require_once 'config/db.php';
                 var zip_code = item.zip_code;
                 result_address.find('code').text(neighbourhood + ", " + district + ", " + town + "/" + city + " " + zip_code);
                 result_address.show();
+            } else {
+                result_address.hide();
             }
         });
         //Show/Hide code block section
