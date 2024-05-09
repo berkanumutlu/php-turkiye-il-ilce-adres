@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: mysql
--- Üretim Zamanı: 29 Nis 2024, 20:24:27
+-- Üretim Zamanı: 09 May 2024, 10:53:29
 -- Sunucu sürümü: 5.7.43
 -- PHP Sürümü: 8.2.12
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cities` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `plate_code` varchar(25) DEFAULT NULL,
   `towns` json NOT NULL,
   `lat` double NOT NULL,
