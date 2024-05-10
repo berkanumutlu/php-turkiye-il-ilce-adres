@@ -1,0 +1,38 @@
+{
+  "name": "berkanumutlu/php-turkiye-il-ilce-adres",
+  "type": "project",
+  "description": "PHP Turkiye Il, Ilce, Adres by Berkan Ümütlü",
+  "keywords": [
+    "php",
+    "türkiye",
+    "türkiye il ilçeler",
+    "türkiye adres oluşturucu",
+    "türkiye google maps",
+    "türkiye map polygon"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Berkan Ümütlü",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/berkanumutlu/php-turkiye-il-ilce-adres",
+  "support": {
+    "issues": "https://github.com/berkanumutlu/php-turkiye-il-ilce-adres/issues",
+    "security": "https://github.com/berkanumutlu/php-turkiye-il-ilce-adres/security/policy"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "App\\Library\\": "src/lib/",
+      "App\\Config\\": "src/config/"
+    }
+  },
+  "require": {
+    "php": ">=5.6",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*"
+  }
+}

@@ -1,0 +1,177 @@
+:root {
+    --font-family: Gordita, Helvetica Neue, Helvetica, Arial;
+    --color-primary: #D0021A;
+    --color-primary-hover: #A1141C;
+    --color-primary-active: #EC1B2A;
+    --color-text-primary: #333;
+    --color-white: #fff;
+    --color-gray: #f3f3f3;
+    --color-gray-2: #e4e8ec;
+    --color-black: #000;
+    --color-black-2: #122333;
+    --color-bg-orange-light: #fcf8e3;
+    --transition-all: all .5s ease-in-out;
+    --transition-background: background .25s, color .25s;
+}
+
+html, body {
+    font-family: var(--font-family), sans-serif;
+    background: var(--color-black-2);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+.arrow {
+    border: solid var(--color-black);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: var(--transition-all);
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.card .card-header {
+    background-color: var(--color-primary);
+    color: var(--color-gray);
+}
+
+.select-section.select-section-town,
+.select-section.select-section-district,
+.select-section.select-section-neighbourhood,
+.select-section.select-section-street,
+.input-section-street-no,
+.input-section-floor,
+.input-section-flat-no,
+.result-section {
+    display: none;
+}
+
+.result-section {
+    margin-top: .5rem;
+}
+
+.select-section {
+    margin-bottom: 1rem;
+}
+
+.code-block-section {
+    display: none;
+}
+
+.code-block-section .code-block-header {
+    padding: .25rem .5rem .25rem 1rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--bs-gray-100);
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.code-block-section .code-block-header-title {
+    font-family: var(--bs-font-monospace);
+    text-transform: uppercase;
+    --bs-text-opacity: 1;
+    color: var(--bs-secondary-color);
+}
+
+.code-block-section .code-block-view-button {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.code-block-section .code-block-button-wrapper {
+    margin-left: auto;
+    display: flex;
+}
+
+.code-block-section .code-block-button-wrapper .btn {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 1em;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0.45em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-weight: normal;
+    color: var(--bs-dark);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    border-radius: initial;
+    transition: var(--transition-background);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.code-block-section .code-block-button-wrapper .btn:hover {
+    background-color: var(--color-gray-2);
+}
+
+.code-block-section .code-block-content {
+    display: none;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    border-top: none;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.code-block-section.result-address .code-block-content {
+    display: block !important;
+}
+
+.code-block-section pre.code-block-pre {
+    margin-bottom: 0;
+}
+
+.code-block-section pre.code-block-pre code {
+    min-height: 40px;
+    overflow: auto;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+
+.code-block-section.code-block-section-primary .code-block-header {
+    color: var(--color-white);
+    background-color: var(--color-primary-hover);
+}
+
+.code-block-section.code-block-section-primary .code-block-header-title {
+    color: var(--color-white);
+}
+
+.code-block-section.code-block-section-primary .code-block-button-wrapper .btn svg {
+    fill: var(--color-white);
+}
+
+.code-block-section.code-block-section-primary .code-block-button-wrapper .btn:hover svg {
+    fill: var(--color-black);
+}
