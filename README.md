@@ -20,11 +20,19 @@
 
 ##### TR
 
-Bu projede Türkiye için il, ilçe, mahalle, sokak/cadde, apartman kayıtları ile adres oluşturabilirsiniz.
+Bu projede Türkiye için il, ilçe, mahalle, sokak/cadde kayıtları ile adres oluşturabilirsiniz.
 
 ##### EN
 
-In this project, you can create an address with province, district, neighborhood, street/avenue and apartment records for Türkiye.
+In this project, you can create an address with province, district, neighborhood, street/avenue records for Türkiye.
+
+## Screenshots
+
+![screenshot01-turkey-address-form](screenshots/screenshot01.png)
+
+## Sources
+- https://www.e-icisleri.gov.tr/Anasayfa/MulkiIdariBolumleri.aspx
+- https://adres.nvi.gov.tr/VatandasIslemleri/AdresSorgu
 
 ## License
 
