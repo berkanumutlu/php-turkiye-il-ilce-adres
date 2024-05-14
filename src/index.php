@@ -160,6 +160,9 @@ require_once 'config/db.php';
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12">
+                            <div id="map"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="card-footer text-body-secondary">
@@ -176,6 +179,9 @@ require_once 'config/db.php';
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/plugins/highlight.js/highlight.min.js"></script>
 <script src="assets/plugins/select2/js/select2.full.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly" defer></script>-->
+<script src="assets/web/js/map.js"></script>
 <script src="assets/web/js/main.js"></script>
 </body>
 </html>

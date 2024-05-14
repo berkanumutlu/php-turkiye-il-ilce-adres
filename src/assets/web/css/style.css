@@ -175,3 +175,9 @@ a:hover {
 .code-block-section.code-block-section-primary .code-block-button-wrapper .btn:hover svg {
     fill: var(--color-black);
 }
+
+#map {
+    display: none;
+    width: 100%;
+    height: 500px;
+}
