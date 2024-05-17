@@ -5,8 +5,8 @@
 </div>
 <br>
 <p align="center">
-<a href="https://github.com/berkanumutlu/php-turkiye-il-ilce-adres/releases/tag/v1.0.0" target="_blank" rel="nofollow"><img src="https://img.shields.io/github/v/release/berkanumutlu/php-turkiye-il-ilce-adres?logo=github" alt="PHP Sitemap Generator Release"></a>
-<a href="https://github.com/berkanumutlu/php-turkiye-il-ilce-adres/stargazers" rel="nofollow"><img src="https://img.shields.io/github/stars/berkanumutlu/php-turkiye-il-ilce-adres?style=flat&logo=github" alt="PHP Sitemap Generator Repo stars"></a>
+<a href="https://github.com/berkanumutlu/php-turkiye-il-ilce-adres/releases/tag/v1.0.1" target="_blank" rel="nofollow"><img src="https://img.shields.io/github/v/release/berkanumutlu/php-turkiye-il-ilce-adres?logo=github" alt="PHP Türkiye il ilçe adres Release"></a>
+<a href="https://github.com/berkanumutlu/php-turkiye-il-ilce-adres/stargazers" rel="nofollow"><img src="https://img.shields.io/github/stars/berkanumutlu/php-turkiye-il-ilce-adres?style=flat&logo=github" alt="PHP Türkiye il ilçe adres Repo stars"></a>
 <a href="https://github.com/berkanumutlu/php-turkiye-il-ilce-adres/blob/master/LICENSE" target="_blank" rel="nofollow"><img src="https://img.shields.io/github/license/berkanumutlu/laravel-example-app" alt="License"></a>
 <a href="https://www.php.net/releases/5_6_0.php" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PHP->=v5.6-777BB4?logo=php&logoColor=white&labelColor=777BB4" alt="PHP Version"></a>
 <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/Bootstrap-v5.3.3-7952B3?logo=bootstrap&logoColor=white&labelColor=7952B3" alt="Bootstrap Version"></a>

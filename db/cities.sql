@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: mysql
--- Üretim Zamanı: 09 May 2024, 10:53:29
--- Sunucu sürümü: 5.7.43
--- PHP Sürümü: 8.2.12
+-- Üretim Zamanı: 11 May 2024, 18:42:07
+-- Sunucu sürümü: 5.7.44
+-- PHP Sürümü: 8.2.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

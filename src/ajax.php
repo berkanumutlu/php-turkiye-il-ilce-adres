@@ -51,7 +51,7 @@ if (!empty($_POST['get_city_list'])) {
     $response = new \App\Library\Response();
     $search = isset($_POST['q']) ? trim($_POST['q']) : '';
     try {
-        $query_city = "SELECT id, name, plate_code, towns FROM cities";
+        $query_city = "SELECT id, name, plate_code, towns, lat, lon, ST_AsGeoJSON(`polygons`) as polygons, boundingbox FROM cities";
         if (!empty($search)) {
             $query_city .= " WHERE name LIKE '%".$search."%' OR plate_code LIKE '%".$search."%'";
         }
@@ -74,6 +74,12 @@ if (!empty($_POST['get_city_list'])) {
             foreach ($city_list as $city) {
                 if (!empty($city['towns'])) {
                     $city['towns'] = json_decode($city['towns'], true);
+                }
+                if (!empty($city['polygons'])) {
+                    $city['polygons'] = json_decode($city['polygons'], true);
+                }
+                if (!empty($city['boundingbox'])) {
+                    $city['boundingbox'] = json_decode($city['boundingbox'], true);
                 }
                 $items[] = $city;
             }
@@ -205,7 +211,7 @@ if (!empty($_POST['get_neighbourhood_list'])) {
     $district_id = isset($_POST['district_id']) ? intval($_POST['district_id']) : null;
     $search = isset($_POST['q']) ? trim($_POST['q']) : '';
     try {
-        $query_neighbourhood = "SELECT id, city_id, town_id, district_id, name, zip_code FROM neighbourhoods";
+        $query_neighbourhood = "SELECT id, city_id, town_id, district_id, name, zip_code, streets FROM neighbourhoods";
         if (!empty($city_id)) {
             $query_neighbourhood .= " WHERE city_id='".$city_id."'";
         }
@@ -247,7 +253,14 @@ if (!empty($_POST['get_neighbourhood_list'])) {
         $query_neighbourhood_list = $db->query($query_neighbourhood, PDO::FETCH_ASSOC);
         if ($query_neighbourhood_list->rowCount() > 0) {
             $neighbourhood_list = $query_neighbourhood_list->fetchAll(PDO::FETCH_ASSOC);
-            $response->appendData($neighbourhood_list, 'items');
+            $items = array();
+            foreach ($neighbourhood_list as $neighbourhood) {
+                if (!empty($neighbourhood['streets'])) {
+                    $neighbourhood['streets'] = json_decode($neighbourhood['streets'], true);
+                }
+                $items[] = $neighbourhood;
+            }
+            $response->appendData($items, 'items');
         }
         $response->setStatus(true);
         $response->setStatusCode(200);

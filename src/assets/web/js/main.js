@@ -17,6 +17,7 @@ var result_street = $(".result-street");
 var input_section_street_no = $(".input-section-street-no");
 var input_section_floor = $(".input-section-floor");
 var input_section_flat_no = $(".input-section-flat-no");
+var mapSelector = $("#map");
 var select2_properties = {
     width: '100%',
     language: 'en',
@@ -105,6 +106,7 @@ function resetSelectMenu(select_item, result_item) {
     input_section_street_no.hide();
     input_section_floor.hide();
     input_section_flat_no.hide();
+    mapSelector.hide();
 }
 
 function showSelectMenu(select_item, result_item) {
@@ -186,6 +188,9 @@ function showAddressText() {
 
     result_address.find('code').text(address);
     result_address.show();
+    var selected_city = select_city.select2("data")[0];
+    initMap(mapSelector.get(0), selected_city.lat, selected_city.lon, selected_city.polygons.coordinates[0], selected_city.boundingbox);
+    mapSelector.show();
 }
 
 function showAddressTextWithTimeout() {
